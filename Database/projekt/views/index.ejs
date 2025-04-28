@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brukere</title>
+</head>
+<body>
+    <h1>Liste over brukere</h1>
+    
+    <!-- Skjema for å legge til brukere -->
+    <form action="/add" method="POST">
+        <input type="text" name="name" placeholder="Navn" required>
+        <input type="email" name="email" placeholder="E-post" required>
+        <button type="submit">Legg til bruker</button>
+    </form>
+
+    <ul>
+        <% users.forEach(user => { %>
+            <li>
+                <%= user.name %> - <%= user.email %>
+                <!-- Slett-knapp -->
+                <form action="/delete" method="POST" style="display:inline;">
+                    <input type="hidden" name="id" value="<%= user.id %>">
+                    <button type="submit">Slett</button>
+                </form>
+            </li>
+        <% }); %>
+    </ul>
+
+</body>
+</html>

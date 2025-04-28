@@ -1,0 +1,221 @@
+* {
+    user-select: none; /* Disables text selection on the page */
+  }
+  body {
+    font-family: 'Arial', sans-serif; /* Sets the font family for the body */
+    margin: 0; /* Removes margin around the body */
+    padding: 0; /* Removes padding around the body */
+    background-color: #f4f4f4; /* Sets the background color of the body */
+    text-align: center; /* Centers the text horizontally */
+    color: #333; /* Sets the text color */
+  }
+  
+  /* Tool Bar */
+  ul {
+    list-style-type: none; /* Removes bullet points from the list */
+    margin: 0; /* Removes margin around the list */
+    padding: 0; /* Removes padding around the list */
+    background-color: #333; /* Sets the background color of the list */
+   
+  }
+  
+  
+  /* Tool Bar */
+  ul {
+    position: sticky; /* Makes the toolbar sticky */
+    top: 0; /* Positions it at the top of the viewport */
+    z-index: 1000; /* Ensures it stays above other content */
+    
+  }
+  
+  /* Navbar container */
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 70px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  h1, h2 {
+    color: #2c3e50; /* Sets the color of headings */
+  }
+  
+  p {
+    color: #444; /* Sets the color of paragraphs */
+    font-size: 1em; /* Sets the font size */
+    line-height: 1.5; /* Sets the line height */
+    max-width: 300px; /* Sets the maximum width of paragraphs */
+    margin: 10px auto; /* Adds margin to paragraphs */
+  }
+  
+  /* Images */
+  img {
+    max-width: 100%; /* Sets the maximum width of images */
+    height: auto; /* Sets the height of images to auto */
+    border-radius: 8px; /* Adds border radius to images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds box shadow to images */
+    margin: 10px auto; /* Adds margin to images */  
+  }
+  
+  /* Horizontal Grids */
+  .container {
+    display: flex; /* Displays sections in a flex layout */
+    flex-wrap: wrap; /* Wraps sections if the screen is too small */
+    max-width: 1000px; /* Sets the maximum width of the container */
+    margin: 0 auto; /* Centers the container horizontal ly */
+    padding: 20px 10px; /* Adds padding to the container */
+    gap: 50px; /* Adds gap between sections */
+  }
+  
+  section {
+    flex: calc(33.333%); /* Sets the flex basis for sections */
+    background-color: white; /* Sets the background color of sections */
+    border-radius: 8px; /* Adds border radius to sections */
+    margin: 0; /* Removes margin around sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds box shadow to sections */
+    padding: 15px; /* Adds padding to sections */
+    min-width: 250px; /* Sets the minimum width of sections */
+  }
+  
+  #home {
+    background-color: #ecf0f1; /* Sets the background color of the home section */
+  }
+  
+  /* Styling for the button */
+  .button1 {
+    background-color: #3498db; /* Sets the background color of the button */
+    color: white; /* Sets the text color of the button */
+    border: none; /* Removes border from the button */
+    padding: 10px 20px; /* Adds padding to the button */
+    font-size: 14px; /* Sets the font size of the button */
+    font-weight: 600; /* Makes font bold */
+    border-radius: 6px; /* Adds border radius to the button */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Adds transition effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds box shadow to the button */
+  }
+  
+  .button1:hover {
+    background-color: #2980b9; /* Changes background color on hover */
+    transform: translateY(-2px); /* Translates the button down on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Changes box shadow on hover */
+  }
+  
+  .button1:active {
+    background-color: #1f618d; /* Changes background color on active */
+    transform: translateY(0); /* Resets translation on active */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Changes box shadow on active */
+  }
+  
+  a {
+    text-decoration: none; /* Removes underline from links */
+  }
+  
+  /* Full-screen hero section */
+  #home {
+    background-image: url("../Australia/image1\(1\).jpg"); /* Sets the background image of the home section */
+    background-size: cover; /* Covers the section with the background image */
+    background-position: center; /* Centers the background image */
+    min-height: 90vh; /* Sets the minimum height of the section */
+    position: relative; /* Sets the position to relative */
+    display: flex; /* Displays content in a flex layout */
+    justify-content: center; /* Justifies content to the center */
+    align-items: center; /* Aligns items to the center */
+    color: white; /* Sets the text color */
+  }
+    
+  h1 {
+    font-size: 4rem; /* Sets the font size of the header */
+    margin-top: 1.5rem; /* Adds margin top to the header */
+    text-align: center; /* Centers the text horizontally */
+    color: #ffffff; /*  Sets the text color */
+    font-weight: bold; /* Makes font bold */
+  }
+  
+  iframe {
+    width: 100%; /* Ensures the iframe takes the full width */
+    height: 100%; /* Ensures the iframe takes the full height */
+    min-height: 700px; /* Sets a minimum height */
+    border: none; /* Removes the default border */  
+  }
+  
+  
+          .bildestyling {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              gap: 20px;
+              padding: 20px;
+          }
+  
+          .bildestyling img {
+              border-radius: 8px;
+              box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+              transition: transform 0.3s ease;
+          }
+  
+          .bildestyling img:hover {
+              transform: scale(1.05);
+          }
