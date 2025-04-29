@@ -62,7 +62,7 @@ requireLogin();
         <section id="ai-chatbot">
             <h2>Har du flere spørsmål?</h2> 
             <p>Klikk her for å bruke spørre spørsmål til en AI chatbot som er trent opp til å svare på spørsmål om meg.</p>
-            <a href="html/Ai.html"><button class="button1">Klikk her for en AI chatbot</button></a> 
+            <a href="html/Ai.php"><button class="button1">Klikk her for en AI chatbot</button></a> 
         </section>
 
 
