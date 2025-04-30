@@ -1,88 +1,100 @@
-/* Kommentar-styling, isolert i .kommentarer-wrapper */
+/* Wrapper for kommentarer */
 .kommentarer-wrapper {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: sans-serif;
+    max-width: 800px; /* Maks bredde på containeren */
+    margin: 0 auto; /* Sentrerer containeren horisontalt */
+    padding: 20px; /* Legger til litt innvendig avstand */
+    font-family: sans-serif; /* Bruker sans-serif skrifttype */
 }
 
+/* Styling for h1 og h2 inne i kommentar-containeren */
 .kommentarer-wrapper h1,
 .kommentarer-wrapper h2 {
-    color: #333;
+    color: #333; /* Mørk grå farge for tekst */
 }
 
+/* Stiler for hver kommentar */
 .kommentar {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 15px;
-    background: #f9f9f9;
-    border-radius: 4px;
+    border: 1px solid #ccc; /* Lys grå kant rundt kommentaren */
+    padding: 10px; /* Liten avstand rundt innholdet */
+    margin-bottom: 15px; /* Avstand mellom kommentarer */
+    background: #f9f9f9; /* Lys bakgrunnsfarge */
+    border-radius: 4px; /* Rundede kanter */
 }
 
+/* Hode på kommentaren (brukes til navnet og dato) */
 .kommentar .hode {
-    font-weight: bold;
-    font-size: 0.95em;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5px;
+    font-weight: bold; /* Fett skrift for tittelen */
+    font-size: 0.95em; /* Liten justering av fontstørrelsen */
+    display: flex; /* Bruker flex for å justere innholdet */
+    justify-content: space-between; /* Plasserer navn og dato på hver sin side */
+    margin-bottom: 5px; /* Litt avstand under hodet */
 }
 
+/* Dato-stil i kommentaren */
 .kommentar .dato {
-    color: #888;
-    font-size: 0.8em;
+    color: #888; /* Lys grå farge på dato */
+    font-size: 0.8em; /* Liten tekststørrelse */
 }
 
+/* Innholdet i kommentaren */
 .kommentar .innhold {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Avstand under innholdet */
 }
 
+/* Svar-knapp for kommentarer */
 .svar-knapp {
-    background: none;
-    border: none;
-    color: #0077cc;
-    text-decoration: underline;
-    cursor: pointer;
-    font-size: 0.9em;
+    background: none; /* Ingen bakgrunnsfarge */
+    border: none; /* Ingen kant */
+    color: #0077cc; /* Blå tekstfarge */
+    text-decoration: underline; /* Understreket tekst */
+    cursor: pointer; /* Endrer muspekeren til en hånd */
+    font-size: 0.9em; /* Liten tekststørrelse */
 }
 
+/* Skjult svarskjema */
 .svar-skjema {
-    display: none;
-    margin-top: 10px;
+    display: none; /* Skjuler skjemaet som standard */
+    margin-top: 10px; /* Litt avstand øverst */
 }
 
+/* Stiler for svar i en kommentar */
 .svar {
-    margin-left: 20px;
-    border-left: 2px solid #ccc;
-    padding-left: 10px;
-    background: #fff;
-    margin-top: 10px;
+    margin-left: 20px; /* Liten venstre marg */
+    border-left: 2px solid #ccc; /* Vertikal linje til venstre */
+    padding-left: 10px; /* Avstand til venstre for innholdet */
+    background: #fff; /* Hvit bakgrunn for svar */
+    margin-top: 10px; /* Litt avstand øverst */
 }
 
+/* Styling for å skrive kommentarer */
 .skriv-kommentar {
-    margin-bottom: 20px;
-    background: #eee;
-    padding: 15px;
-    border-radius: 4px;
+    margin-bottom: 20px; /* Avstand under skrivefeltet */
+    background: #eee; /* Lys grå bakgrunn */
+    padding: 15px; /* Litt avstand rundt innholdet */
+    border-radius: 4px; /* Rundede kanter */
 }
 
+/* Textarea for å skrive kommentar */
 .skriv-kommentar textarea {
-    width: 100%;
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    resize: vertical;
-    margin-bottom: 10px;
+    width: 100%; /* Full bredde på tekstfeltet */
+    padding: 8px; /* Litt avstand rundt teksten */
+    border-radius: 4px; /* Rundede kanter */
+    border: 1px solid #ccc; /* Lys kant rundt tekstfeltet */
+    resize: vertical; /* Brukeren kan endre høyden på tekstfeltet */
+    margin-bottom: 10px; /* Litt avstand under tekstfeltet */
 }
 
+/* Knapp for å sende inn kommentar */
 .skriv-kommentar button {
-    background: #0077cc;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 4px;
-    cursor: pointer;
+    background: #0077cc; /* Blå bakgrunn på knappen */
+    color: white; /* Hvit tekstfarge */
+    border: none; /* Ingen kant på knappen */
+    padding: 8px 12px; /* Avstand rundt teksten på knappen */
+    border-radius: 4px; /* Rundede kanter */
+    cursor: pointer; /* Endrer muspekeren til en hånd */
 }
 
+/* Styling for knapp når musen er over den */
 .skriv-kommentar button:hover {
-    background: #005fa3;
+    background: #005fa3; /* Mørkere blåfarge når man holder musen over knappen */
 }

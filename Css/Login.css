@@ -1,76 +1,84 @@
-/* Isolerer stilene til login/registrer */
+/* Styling for autentisering-seksjonen */
 .auth-container {
-    max-width: 400px;
-    margin: 60px auto;
-    padding: 30px;
-    background-color: #f8f9fa;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    font-family: sans-serif;
+    max-width: 400px; /* Setter maksimal bredde på autentisering-containeren */
+    margin: 60px auto; /* Sentrerer containeren horisontalt og gir plass øverst */
+    padding: 30px; /* Legger til innvendig avstand */
+    background-color: #f8f9fa; /* Lys bakgrunnsfarge for containeren */
+    border: 1px solid #ddd; /* Grå kant rundt containeren */
+    border-radius: 8px; /* Rundede hjørner */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Lett skygge for dybde */
+    font-family: sans-serif; /* Bruk sans-serif skrifttype */
 }
 
+/* Styling for overskriften */
 .auth-container h2 {
-    text-align: center;
-    margin-bottom: 15px;
-    color: #333;
+    text-align: center; /* Sentrerer overskriften */
+    margin-bottom: 15px; /* Legger til avstand under overskriften */
+    color: #333; /* Mørk tekstfarge for overskriften */
 }
 
+/* Styling for paragrafene i autentisering-seksjonen */
 .auth-container p {
-    text-align: center;
-    margin-top: 10px;
-    color: #555;
+    text-align: center; /* Sentrerer teksten */
+    margin-top: 10px; /* Gir litt avstand over teksten */
+    color: #555; /* Grå tekstfarge for paragrafer */
 }
 
+/* Styling for hvert form-element */
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Gir litt avstand mellom form-elementene */
 }
 
+/* Styling for etikettene i skjemaet */
 label {
-    display: block;
-    margin-bottom: 5px;
-    color: #222;
+    display: block; /* Gjør etikettene til blokk-elementer */
+    margin-bottom: 5px; /* Litt avstand under etiketten */
+    color: #222; /* Mørk tekstfarge for etikettene */
 }
 
+/* Styling for tekst- og passordfeltene */
 input[type="text"],
 input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
+    width: 100%; /* Setter inputfeltene til å være 100% brede */
+    padding: 10px; /* Gir litt avstand inne i inputfeltene */
+    border: 1px solid #ccc; /* Grå kant rundt inputfeltene */
+    border-radius: 5px; /* Rundede kanter på inputfeltene */
+    box-sizing: border-box; /* Inkluderer padding og border i totalbredde */
 }
 
+/* Styling for submit-knappen */
 button#submit {
-    width: 100%;
-    padding: 10px;
-    background-color: #0066cc;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    width: 100%; /* Setter knappen til å være 100% bred */
+    padding: 10px; /* Gir litt avstand inne i knappen */
+    background-color: #0066cc; /* Blå bakgrunnsfarge for knappen */
+    color: white; /* Hvit tekstfarge på knappen */
+    border: none; /* Fjerner kantlinjen rundt knappen */
+    border-radius: 5px; /* Rundede kanter på knappen */
+    font-weight: bold; /* Fett skrift for knappen */
+    cursor: pointer; /* Endrer muspekeren til en hånd ved hover */
+    transition: background-color 0.3s; /* Legger til en overgang på bakgrunnsfargen */
 }
 
+/* Styling når man holder musen over knappen */
 button#submit:hover {
-    background-color: #0052a3;
+    background-color: #0052a3; /* Mørkere blåfarge når man holder musen over */
 }
 
+/* Styling for feilmeldinger */
 .error {
-    background-color: #ffdddd;
-    border: 1px solid #cc0000;
-    padding: 10px;
-    margin-bottom: 15px;
-    color: #a10000;
-    border-radius: 5px;
-    text-align: center;
+    background-color: #ffdddd; /* Lys rød bakgrunn for feilmeldingene */
+    border: 1px solid #cc0000; /* Rød kant rundt feilmeldingen */
+    padding: 10px; /* Litt avstand inne i feilmeldingen */
+    margin-bottom: 15px; /* Avstand under feilmeldingen */
+    color: #a10000; /* Rød tekstfarge */
+    border-radius: 5px; /* Rundede hjørner */
+    text-align: center; /* Sentrerer teksten i feilmeldingen */
 }
 
-/* Mobiltilpasning */
+/* Mobiltilpasning: Justering for små skjermer */
 @media (max-width: 480px) {
     .auth-container {
-        margin: 30px 15px;
-        padding: 20px;
+        margin: 30px 15px; /* Mindre marg på små skjermer */
+        padding: 20px; /* Mindre padding på små skjermer */
     }
 }
