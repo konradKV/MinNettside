@@ -67,9 +67,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html>
 <head>
     <title>Logg inn</title>
-    <link rel="stylesheet" href="texteditor.css">
-    <script src="texteditor.js"></script>
-    <link rel="icon" href="../Pictures/ordlogo.png" />
+    <link rel="stylesheet" href="/Css/Login.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
 <body>

@@ -14,7 +14,7 @@ requireLogin();
 </head>
 <body>
 <?php
-        include("../Include/navbar.html");
+        include("../Include/navbar.php");
     ?>
 
     <div class="bildestyling">

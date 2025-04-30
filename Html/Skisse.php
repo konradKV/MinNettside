@@ -13,7 +13,7 @@ requireLogin();
 </head>
 <body> 
 <?php
-        include("../Include/navbar.html");
+        include("../Include/navbar.php");
     ?>
 
     <img src="../Bilder/skisse.png">

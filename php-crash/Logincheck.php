@@ -48,7 +48,7 @@ function requireLogin() {
 
     // If not logged in, redirect
     if (!$isLoggedIn) {
-        header('Location: /login.php');
+        header('Location: /php-crash/login.php');
         exit();
     }
     

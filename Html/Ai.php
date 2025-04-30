@@ -15,7 +15,7 @@ requireLogin();
 <body> 
   <ul>
   <?php
-        include("../Include/navbar.html");
+        include("../Include/navbar.php");
     ?>
 <iframe src="https://chat.supportai.com/7e44967a1437257/"></iframe>
 

@@ -1,0 +1,76 @@
+/* Isolerer stilene til login/registrer */
+.auth-container {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    font-family: sans-serif;
+}
+
+.auth-container h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.auth-container p {
+    text-align: center;
+    margin-top: 10px;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button#submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button#submit:hover {
+    background-color: #0052a3;
+}
+
+.error {
+    background-color: #ffdddd;
+    border: 1px solid #cc0000;
+    padding: 10px;
+    margin-bottom: 15px;
+    color: #a10000;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Mobiltilpasning */
+@media (max-width: 480px) {
+    .auth-container {
+        margin: 30px 15px;
+        padding: 20px;
+    }
+}

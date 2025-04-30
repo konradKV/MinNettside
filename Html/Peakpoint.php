@@ -13,7 +13,7 @@ requireLogin();
 </head>
 <body> 
 <?php
-        include("../Include/navbar.html");
+        include("../Include/navbar.php");
     ?>
 
         <h1> PeakPoint</h1>
